@@ -3,6 +3,8 @@
 public static class Mathematics{
   private static List<string> previousCipheredWords = new List<string>();
   private static bool input = true;
+  private static List<char> abecedario = new List<char>{    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+  private static List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
 
   ///Aca es el Cifrado Automatico
@@ -15,12 +17,14 @@ public static class Mathematics{
     input = false;
     return;
   }
+  if (string.IsNullOrWhiteSpace(phrase)){
+    Console.WriteLine("La entrada no puede estar vacía.");
+    input = false;
+    return;
+  }
   string[] wordarray = phrase.Split(new[]{' '},StringSplitOptions.RemoveEmptyEntries);
   List<string> cypherwords = new List<string>();
   List<string> words = new List<string>();
-  List<char> abecedario = new List<char>{
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-  List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
   foreach (string word in wordarray){
     words.Add(word);
   }
@@ -59,9 +63,6 @@ public static class Mathematics{
   public static void DecifradoAuto(){
     if(input){
       List<string> words = new List<string>();
-      List<char> abecedario = new List<char>{
-        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-      List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
       Console.WriteLine("\nIngresa el desplazamiento: \n");
       if (!int.TryParse(Console.ReadLine(), out int displacement)) {
        Console.WriteLine("Invalid displacement value.");
@@ -111,12 +112,14 @@ public static class Mathematics{
     Console.WriteLine("La entrada no puede estar vacía.");
     return;
   }
+  if (string.IsNullOrWhiteSpace(phrase)){
+    Console.WriteLine("La entrada no puede estar vacía.");
+    input = false;
+    return;
+  }
   string[] wordarray = phrase.Split(new[]{' '},StringSplitOptions.RemoveEmptyEntries);
   List<string> cypherwords = new List<string>();
   List<string> words = new List<string>();
-  List<char> abecedario = new List<char>{
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-  List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
   foreach (string word in wordarray){
     words.Add(word);
   }
@@ -158,11 +161,14 @@ public static class Mathematics{
       Console.WriteLine("La entrada no puede estar vacía.");
       return;
     }
+    if (string.IsNullOrWhiteSpace(phrase)){
+      Console.WriteLine("La entrada no puede estar vacía.");
+      input = false;
+      return;
+    }
     string[] cypherwordarray = phrase.Split(new[]{' '},StringSplitOptions.RemoveEmptyEntries);
     List<string> cypherwords = new List<string>();
     List<string> words = new List<string>();
-    List<char> abecedario = new List<char>{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-    List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     foreach (string cypherword in cypherwordarray){
       cypherwords.Add(cypherword);
     }
