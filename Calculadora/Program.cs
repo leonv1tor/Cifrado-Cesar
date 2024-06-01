@@ -2,7 +2,7 @@
 using Cifrado;
 
   Console.WriteLine("\n***** CALCULADOR DE CIFRADO *****\n"); 
-  Console.WriteLine("1 ---> Cifrado\n2 ---> Decifrado\n3 ---> Cifrado y Decifrado\nSeleccione una opcion (1 - 2 - 3): ");
+  Console.WriteLine("1 ---> Cifrado\n2 ---> Decifrado\n3 ---> Cifrado y Decifrado\n\nSeleccione una opcion (1 - 2 - 3): ");
   int optionMr = Convert.ToInt32(Console.ReadLine());
   switch (optionMr)
   {

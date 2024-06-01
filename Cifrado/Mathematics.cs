@@ -2,6 +2,10 @@
 
 public static class Mathematics{
   private static List<string> previousCipheredWords = new List<string>();
+
+
+  ///Aca es el Cifrado Automatico
+
  public static void CifradoAuto(){ 
   Console.WriteLine("Ingresa la frase: \n");
   string? phrase = Console.ReadLine(); // Permitir null
@@ -14,6 +18,7 @@ public static class Mathematics{
   List<string> words = new List<string>();
   List<char> abecedario = new List<char>{
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+  List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
   foreach (string word in wordarray){
     words.Add(word);
   }
@@ -29,6 +34,10 @@ public static class Mathematics{
         int index = (abecedario.IndexOf(wchar) + displacement) % 26;
         char yes = abecedario[index];
         encryptedword += yes;
+      }else if (wchar >= 'A' && wchar <= 'Z'){
+        int index = (abecedarioMayus.IndexOf(wchar) + displacement) % 26;
+        char yes = abecedarioMayus[index];
+        encryptedword += yes;
       }else{
         encryptedword += wchar; // Si no es una letra del abecedario, mantenerla sin cambios
       }
@@ -42,10 +51,14 @@ public static class Mathematics{
   previousCipheredWords.AddRange(cypherwords);
  }
 
+
+  /// Decifrado Automatico
+
   public static void DecifradoAuto(){
     List<string> words = new List<string>();
     List<char> abecedario = new List<char>{
       'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     Console.WriteLine("\nIngresa el desplazamiento: \n");
     if (!int.TryParse(Console.ReadLine(), out int displacement)) {
       Console.WriteLine("Invalid displacement value.");
@@ -61,6 +74,13 @@ public static class Mathematics{
           }
           char yes = abecedario[index];
           word += yes;
+        }else if (wchar >= 'A' && wchar <= 'Z'){
+          int index = (abecedarioMayus.IndexOf(wchar) - displacement) % 26;
+          if(index < 0){
+            index += 26;
+          }
+          char yes = abecedarioMayus[index];
+          word += yes;
         }else{
           word += wchar; // Si no es una letra del abecedario, mantenerla sin cambios
         }
@@ -72,6 +92,11 @@ public static class Mathematics{
     Console.Write(word + " ");
     }
   }
+
+
+  ///Cifrado Manual
+
+
  public static void Cifrado(){ 
   Console.WriteLine("Ingresa la frase: \n");
   string? phrase = Console.ReadLine(); // Permitir null
@@ -84,6 +109,7 @@ public static class Mathematics{
   List<string> words = new List<string>();
   List<char> abecedario = new List<char>{
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+  List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
   foreach (string word in wordarray){
     words.Add(word);
   }
@@ -99,6 +125,10 @@ public static class Mathematics{
         int index = (abecedario.IndexOf(wchar) + displacement) % 26;
         char yes = abecedario[index];
         encryptedword += yes;
+      }else if (wchar >= 'A' && wchar <= 'Z'){
+        int index = (abecedarioMayus.IndexOf(wchar) + displacement) % 26;
+        char yes = abecedarioMayus[index];
+        encryptedword += yes;
       }else{
         encryptedword += wchar; // Si no es una letra del abecedario, mantenerla sin cambios
       }
@@ -110,6 +140,10 @@ public static class Mathematics{
   Console.Write(cypherword + " ");
   }
  }
+
+  ///Decifrado Manual
+
+
   public static void Decifrado(){
     Console.WriteLine("Ingresa la frase cifrada: \n");
     string? phrase = Console.ReadLine(); // Permitir null
@@ -121,6 +155,7 @@ public static class Mathematics{
     List<string> cypherwords = new List<string>();
     List<string> words = new List<string>();
     List<char> abecedario = new List<char>{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    List<char> abecedarioMayus = new List<char>{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     foreach (string cypherword in cypherwordarray){
       cypherwords.Add(cypherword);
     }
@@ -138,6 +173,13 @@ public static class Mathematics{
             index += 26;
           }
           char yes = abecedario[index];
+          word += yes;
+        }else if (wchar >= 'A' && wchar <= 'Z'){
+          int index = (abecedarioMayus.IndexOf(wchar) - displacement) % 26;
+          if(index < 0){
+            index += 26;
+          }
+          char yes = abecedarioMayus[index];
           word += yes;
         }else{
           word += wchar; // Si no es una letra del abecedario, mantenerla sin cambios
