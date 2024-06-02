@@ -9,29 +9,18 @@ public static class Mathematics{
 
   ///Aca es el Cifrado Automatico
 
- public static void CifradoAuto(){ 
-  Console.WriteLine("Ingresa la frase: \n");
-  string? phrase = Console.ReadLine(); // Permitir null
+ public static string CifradoAuto(string phrase, int displacement){ 
   if (string.IsNullOrEmpty(phrase)){
-    Console.WriteLine("La entrada no puede estar vacía.");
-    input = false;
-    return;
+    throw new ArgumentException("La entrada no puede estar vacía.");
   }
   if (string.IsNullOrWhiteSpace(phrase)){
-    Console.WriteLine("La entrada no puede estar vacía.");
-    input = false;
-    return;
+    throw new ArgumentException("La entrada no puede estar vacía.");
   }
   string[] wordarray = phrase.Split(new[]{' '},StringSplitOptions.RemoveEmptyEntries);
   List<string> cypherwords = new List<string>();
   List<string> words = new List<string>();
   foreach (string word in wordarray){
     words.Add(word);
-  }
-  Console.WriteLine("\nIngresa el desplazamiento: \n");
-  if (!int.TryParse(Console.ReadLine(), out int displacement)) {
-    Console.WriteLine("Invalid displacement value.");
-    return;
   }
   foreach (var word in words){
     string encryptedword = "";
@@ -50,24 +39,16 @@ public static class Mathematics{
     }
     cypherwords.Add(encryptedword);
   }
-  Console.WriteLine("\nFrase cifrada: \n");
-  foreach (var cypherword in cypherwords){
-  Console.Write(cypherword + " ");
-  }
   previousCipheredWords.AddRange(cypherwords);
+  return string.Join(" ", cypherwords);
  }
 
 
   /// Decifrado Automatico
 
-  public static void DecifradoAuto(){
+  public static string DecifradoAuto(int displacement){
     if(input){
       List<string> words = new List<string>();
-      Console.WriteLine("\nIngresa el desplazamiento: \n");
-      if (!int.TryParse(Console.ReadLine(), out int displacement)) {
-       Console.WriteLine("Invalid displacement value.");
-        return;
-      }
       foreach (var cypherword in previousCipheredWords){
         string word = "";
         foreach (var wchar in cypherword){
@@ -91,13 +72,9 @@ public static class Mathematics{
         }
         words.Add(word);
       }
-      Console.WriteLine("\nFrase decifrada: \n");
-      foreach (var word in words){
-      Console.Write(word + " ");
-      }
+      return string.Join(" ", words);
     }else{
-      Console.WriteLine("\nLa entrada no puede estar vacía.");
-      return;
+      throw new ArgumentException("La entrada no puede estar vacía.");
     }
   }
 
@@ -105,28 +82,18 @@ public static class Mathematics{
   ///Cifrado Manual
 
 
- public static void Cifrado(){ 
-  Console.WriteLine("Ingresa la frase: \n");
-  string? phrase = Console.ReadLine(); // Permitir null
+ public static string Cifrado(string phrase, int displacement){ 
   if (string.IsNullOrEmpty(phrase)){
-    Console.WriteLine("La entrada no puede estar vacía.");
-    return;
+    throw new ArgumentException("La entrada no puede estar vacía.");
   }
   if (string.IsNullOrWhiteSpace(phrase)){
-    Console.WriteLine("La entrada no puede estar vacía.");
-    input = false;
-    return;
+    throw new ArgumentException("La entrada no puede estar vacía.");
   }
   string[] wordarray = phrase.Split(new[]{' '},StringSplitOptions.RemoveEmptyEntries);
   List<string> cypherwords = new List<string>();
   List<string> words = new List<string>();
   foreach (string word in wordarray){
     words.Add(word);
-  }
-  Console.WriteLine("\nIngresa el desplazamiento: \n");
-  if (!int.TryParse(Console.ReadLine(), out int displacement)) {
-    Console.WriteLine("Invalid displacement value.");
-    return;
   }
   foreach (var word in words){
     string encryptedword = "";
@@ -145,37 +112,24 @@ public static class Mathematics{
     }
     cypherwords.Add(encryptedword);
   }
-  Console.WriteLine("\nFrase cifrada: \n");
-  foreach (var cypherword in cypherwords){
-  Console.Write(cypherword + " ");
-  }
+  return string.Join(" ", cypherwords);
  }
 
   ///Decifrado Manual
 
 
-  public static void Decifrado(){
-    Console.WriteLine("Ingresa la frase cifrada: \n");
-    string? phrase = Console.ReadLine(); // Permitir null
+  public static string Decifrado(string phrase, int displacement){
     if (string.IsNullOrEmpty(phrase)){
-      Console.WriteLine("La entrada no puede estar vacía.");
-      return;
+      throw new ArgumentException("La entrada no puede estar vacía.");
     }
     if (string.IsNullOrWhiteSpace(phrase)){
-      Console.WriteLine("La entrada no puede estar vacía.");
-      input = false;
-      return;
+      throw new ArgumentException("La entrada no puede estar vacía.");
     }
     string[] cypherwordarray = phrase.Split(new[]{' '},StringSplitOptions.RemoveEmptyEntries);
     List<string> cypherwords = new List<string>();
     List<string> words = new List<string>();
     foreach (string cypherword in cypherwordarray){
       cypherwords.Add(cypherword);
-    }
-    Console.WriteLine("\nIngresa el desplazamiento: \n");
-    if (!int.TryParse(Console.ReadLine(), out int displacement)) {
-      Console.WriteLine("Invalid displacement value.");
-      return;
     }
     foreach (var cypherword in cypherwords){
       string word = "";
@@ -200,9 +154,6 @@ public static class Mathematics{
       }
       words.Add(word);
     }
-    Console.WriteLine("\nFrase decifrada: \n");
-    foreach (var word in words){
-    Console.Write(word + " ");
-    }
+    return string.Join(" ", words);
   }
 }
