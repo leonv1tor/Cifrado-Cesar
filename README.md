@@ -34,7 +34,7 @@ cd Calculadora/
 ```
 dotnet run Program.cs
 ```
-![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/First.png)
+![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/Parte1)
 
 Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ```
 
