@@ -38,15 +38,15 @@ dotnet run Program.cs
 
 Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ```
 
-![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/MRU.png)
+![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
 
 En el caso de cifrado poner un texto. EJ: ``` Hola ``` 
 
-![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/MRUA.png)
+![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
 
 En el caso de MRUA dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ```
 
-![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/POC.png)
+![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte4.png)
 
 Este es un POC(Proof of concept) de MRU en este caso tomamos la opcion de calcular la distancia por lo que elegimos la opcion ``` 1 ``` esto hace que nos pregunta la velocidad en la cual ingresamos ``` 2 ```  y finalmente el tiempo el cual es ``` 3 ``` al finalizar de ingresar los datos para que la formula funcione este mismo no indica que ``` La distancia es: 6 ``` por ultimo el programa hace la pregunta de si desea seguir haciendo calculaciones en el caso de que si se pone ``` 1 ``` en el caso de que no se pone ``` 2 ```
 
