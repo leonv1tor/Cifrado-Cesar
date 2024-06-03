@@ -1,0 +1,53 @@
+# Historia de Usuario No. 1
+
+## Desarrollo de un Sistema de Cifrado y Descifrado César
+
+`Como usuario, necesito poder cifrar y descifrar mensajes utilizando el cifrado César para proteger la privacidad de la información.`
+
+## Descripción
+
+El cifrado César es una técnica de criptografía clásica que consiste en desplazar cada letra de un mensaje una cantidad fija de posiciones en el alfabeto. Este sistema se usa para proteger la confidencialidad de la información al transmitirla. Un sistema que permita cifrar y descifrar mensajes utilizando esta técnica sería de gran ayuda para mantener la privacidad de los datos.
+
+## Criterios de Aceptación
+
+1. **Criterio de Aceptación 1**
+   - El usuario puede seleccionar entre cifrar, descifrar o realizar ambas acciones en un mensaje utilizando el cifrado César.
+   - El sistema muestra el mensaje resultante de acuerdo a la opción seleccionada.
+
+2. **Criterio de Aceptación 2**
+   - Se debe ingresar el mensaje a cifrar o descifrar.
+   - Se debe ingresar el valor de desplazamiento para cifrar o descifrar el mensaje.
+   - El sistema muestra el mensaje cifrado o descifrado de forma clara y precisa.
+
+## Prioridad
+
+Alta
+
+## Estimación
+
+Se estima que esta historia de usuario tomará aproximadamente 2 horas para completarse.
+
+## Notas/Tareas Adicionales
+
+- [x] Implementar funciones para cifrar y descifrar mensajes utilizando el cifrado César.
+- [x] Permitir al usuario ingresar el mensaje y el valor de desplazamiento.
+- [x] Realizar pruebas exhaustivas para garantizar la precisión de los resultados.
+
+## Prototipos/Anexos
+
+- 
+
+## Discusiones
+
+1. **Discusión 1**
+   - Se debatió sobre la importancia de ofrecer al usuario la posibilidad de cifrar y descifrar mensajes de mayor tamaño y complejidad.
+   - Se acordó priorizar el desarrollo de las funciones de cifrado y descifrado en la primera iteración.
+
+2. **Discusión 2**
+   - Se discutió sobre la necesidad de manejar correctamente los casos límite, como mensajes vacíos o desplazamientos fuera del rango válido.
+   - Se decidió implementar validaciones para estos casos y proporcionar mensajes de error claros al usuario.
+
+## Historial de Cambios
+
+- **[02/06/2024]** Cambio realizado por [Gerard Gonzalez] - Se desarrolló la funcionalidad para cifrar y descifrar mensajes utilizando el cifrado César.
+- **[02/06/2024]** Cambio realizado por [Gerard Gonzalez] - Se implementaron mejoras en la interfaz de usuario para facilitar el proceso de cifrado y descifrado.

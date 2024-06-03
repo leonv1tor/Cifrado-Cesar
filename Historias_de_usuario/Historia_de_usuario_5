@@ -1,0 +1,51 @@
+# Historia de Usuario No. 5
+
+## Implementación de Soporte Multilingüe
+
+`Como usuario, quiero poder cifrar y descifrar mensajes en diferentes idiomas, no limitándome al alfabeto inglés, para adaptarme a diversas necesidades de comunicación.`
+
+## Descripción
+
+Es importante que el sistema de cifrado y descifrado César pueda manejar mensajes escritos en diferentes idiomas, no solo en inglés. Esto permite a los usuarios comunicarse de manera segura en su idioma preferido y adaptarse a diversas situaciones donde se requiera el cifrado de mensajes en idiomas no ingleses.
+
+## Criterios de Aceptación
+
+1. **Criterio de Aceptación 1**
+   - El sistema debe admitir la entrada y salida de mensajes en varios idiomas, incluyendo pero no limitado al inglés, español, francés, alemán, etc.
+   - Se debe garantizar que el cifrado y descifrado funcione correctamente para caracteres especiales y letras específicas de cada idioma.
+
+2. **Criterio de Aceptación 2**
+   - Se debe proporcionar una interfaz de usuario que permita al usuario seleccionar el idioma en el que está ingresando el mensaje.
+   - El sistema debe ser capaz de reconocer automáticamente el idioma del mensaje de entrada para realizar el cifrado y descifrado adecuado.
+
+## Prioridad
+
+Media
+
+## Estimación
+
+Se estima que esta historia de usuario tomará aproximadamente 2 horas para completarse.
+
+## Notas/Tareas Adicionales
+
+- [x] Implementar soporte para múltiples idiomas en la entrada y salida de mensajes.
+- [x] Desarrollar lógica para el reconocimiento automático del idioma del mensaje.
+- [ ] Realizar pruebas exhaustivas para garantizar la precisión y el funcionamiento adecuado del cifrado y descifrado multilingüe.
+
+## Prototipos/Anexos
+
+- 
+
+## Discusiones
+
+1. **Discusión 1**
+   - Se discutió sobre la importancia de adaptarse a las necesidades de comunicación de usuarios de diferentes regiones y culturas.
+   - Se acordó implementar soporte multilingüe para hacer que el sistema sea más accesible y útil para una audiencia global.
+
+2. **Discusión 2**
+   - Se debatió sobre cómo abordar los desafíos específicos asociados con el cifrado y descifrado de mensajes en diferentes idiomas.
+   - Se decidió realizar investigaciones adicionales sobre las peculiaridades de cada idioma y cómo manejarlas adecuadamente en el sistema.
+
+## Historial de Cambios
+
+- **[02/12/2024]** Cambio realizado por [Gerard Gonzalez] - Se implementó el soporte multilingüe para el cifrado y descifrado de mensajes.

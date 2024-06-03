@@ -1,0 +1,62 @@
+# Historia de Usuario No. 3
+
+## Mejora de la Interfaz de Usuario
+
+`Como usuario, quiero una interfaz de usuario más amigable y fácil de usar para cifrar y desc
+ifrar mensajes utilizando el cifrado César.`
+
+## Descripción
+
+Una interfaz de usuario intuitiva y bien diseñada es esencial para mejorar la experiencia del
+ usuario al utilizar el sistema de cifrado y descifrado César.
+
+## Criterios de Aceptación
+
+1. **Criterio de Aceptación 1**
+   - Se deben agregar mensajes informativos para guiar al usuario a través del proceso de cif
+rado y descifrado.
+   - La interfaz de usuario debe ser clara y fácil de entender, incluso para usuarios no técn
+icos.
+
+2. **Criterio de Aceptación 2**
+   - Se debe proporcionar retroalimentación visual para confirmar que la acción del usuario s
+e ha completado con éxito.
+
+## Prioridad
+
+Media
+
+## Estimación
+
+Se estima que esta historia de usuario tomará aproximadamente 30 minutos para completarse.
+
+## Notas/Tareas Adicionales
+
+- [x] Agregar mensajes informativos y claros para guiar al usuario.
+- [x] Implementar opciones para reiniciar el proceso de cifrado o descifrado.
+- [ ] Realizar pruebas de usabilidad para evaluar la eficacia de las mejoras en la interfaz d
+e usuario.
+
+## Prototipos/Anexos
+
+- 
+
+## Discusiones
+
+1. **Discusión 1**
+   - Se discutió sobre la importancia de una interfaz de usuario intuitiva para mejorar la ex
+periencia del usuario.
+   - Se acordó agregar mensajes informativos y opciones adicionales para mejorar la usabilida
+d del sistema.
+
+2. **Discusión 2**
+   - Se debatió sobre cómo mantener un equilibrio entre la simplicidad y la funcionalidad en 
+el diseño de la interfaz de usuario.
+   - Se decidió priorizar la claridad y la facilidad de uso en la implementación de las mejor
+as.
+
+## Historial de Cambios
+
+- **[02/06/2024]** Cambio realizado por [Gerard Gonzalez] - Se mejoró la interfaz de usuario con mensa
+jes informativos y opciones adicionales.
+

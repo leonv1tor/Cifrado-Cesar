@@ -1,0 +1,41 @@
+# Historia de Usuario No. 4
+
+## Implementación de Cifrado y Descifrado Automático
+
+`Como usuario, necesito la capacidad de cifrar y descifrar mensajes de forma rapida y sin preocuparme por valores no alfabeticos.`
+
+## Descripción
+
+La capacidad de cifrar y descifrar mensajes de forma automática, sin requerir tener en cuenta valores no aceptados normalemente por un sistema de cifrado mejora la experiencia del usuario, los mismos que desean proteger la privacidad de sus mensajes de manera rápida y sin complicaciones. Esto agilizaría el proceso y simplificaría la experiencia de uso del sistema.
+
+## Criterios de Aceptación
+
+1. **Criterio de Aceptación 1**
+   - Se debe implementar una opción para cifrar mensajes automáticamente sin tomar en cuenta valores no alfabeticos.
+   - El sistema debe utilizar cifrado automático que evite valores no alafabeticos.
+
+## Prioridad
+
+Alta
+
+## Estimación
+
+Se estima que esta historia de usuario tomará aproximadamente 45 minutos para completarse.
+
+## Notas/Tareas Adicionales
+
+- [x] Implementar funciones para cifrado y descifrado automáticos utilizando un valoeres no predeterminados.
+- [x] Realizar pruebas exhaustivas para garantizar la precisión y la seguridad del cifrado y descifrado automáticos.
+
+## Prototipos/Anexos
+
+- 
+
+## Discusiones
+
+1. **Discusión 1**
+   - Se discutió sobre la conveniencia y la seguridad de utilizar este sistema al momento de cifrado y descifrado automáticos.
+
+## Historial de Cambios
+
+- **[02/06/2024]** Cambio realizado por [Gerard Gonzalez] - Se implementó la funcionalidad de cifrado y descifrado automáticos con un valor de no predeterminado.

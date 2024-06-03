@@ -1,0 +1,51 @@
+# Historia de Usuario No. 2
+
+## Implementación de Validaciones de Entrada
+
+`Como usuario, necesito que el sistema valide la entrada de datos para evitar errores y asegurar resultados precisos en el cifrado y descifrado César.`
+
+## Descripción
+
+Es fundamental que el sistema realice validaciones de entrada para garantizar que los datos ingresados por el usuario sean adecuados y no generen errores en el proceso de cifrado o descifrado. Esto ayuda a mejorar la experiencia del usuario y evita resultados inesperados debido a entradas incorrectas.
+
+## Criterios de Aceptación
+
+1. **Criterio de Aceptación 1**
+   - El sistema debe verificar que el mensaje ingresado no esté vacío ni nulo antes de realizar el cifrado o descifrado.
+   - Se debe mostrar un mensaje de error claro si el mensaje está vacío o nulo.
+
+2. **Criterio de Aceptación 2**
+   - El sistema debe validar que el valor de desplazamiento sea un número entero dentro del rango válido.
+   - Se debe mostrar un mensaje de error si el valor ingresado no es un número entero o está fuera del rango válido.
+
+## Prioridad
+
+Alta
+
+## Estimación
+
+Se estima que esta historia de usuario tomará aproximadamente 3 horas para completarse.
+
+## Notas/Tareas Adicionales
+
+- [x] Implementar validaciones para el mensaje ingresado.
+- [x] Implementar validaciones para el valor de desplazamiento.
+- [x] Realizar pruebas exhaustivas para verificar el funcionamiento de las validaciones.
+
+## Prototipos/Anexos
+
+- 
+
+## Discusiones
+
+1. **Discusión 1**
+   - Se discutió sobre la importancia de implementar validaciones varias para evitar errores en el proceso de cifrado y descifrado esto abarcando la mayor cantidad de posibles datos ingreasados.
+   - Se acordó priorizar la implementación de validaciones básicas en la primera iteración.
+
+2. **Discusión 2**
+   - Se debatió sobre cómo manejar adecuadamente los mensajes de error para informar al usuario sobre los problemas de entrada.
+   - Se decidió proporcionar mensajes claros y descriptivos para orientar al usuario sobre cómo corregir los errores de entrada.
+
+## Historial de Cambios
+
+- **[02/06/2024]** Cambio realizado por [Gerard Gonzalez] - Se implementaron validaciones para el mensaje y el valor de desplazamiento.
