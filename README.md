@@ -40,7 +40,7 @@ Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opcion
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte2.png)
 
-En el caso de cifrado poner un texto: EJ (``` Hola ``` )
+En el caso de cifrado poner un texto por ejmplo: ``` Hola ``` 
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte3.png)
 
@@ -48,7 +48,7 @@ En el caso de poner ``` Hola ``` el programa no pedira el numero de desplazamien
 
 ![](https://github.com/TarsorCase/Cifrado-Cesar/blob/master/Photos/Parte4.png)
 
-Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad de posiciones que deseamos que se meuva  cada caracter en este caso ``` 4 ``` esto no ofrece como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
+Este es un POC(Proof of concept) de el cifrado que ofrece el programa en este caso tomamos la opcion de calcular el cifrado de la palabra ``` Hola ``` despues de eso elegimos la cantidad de posiciones que deseamos que se mueva  cada caracter en este caso ``` 4 ``` esto nos ofrece como resultado final la palabra ``` Lspe ``` esto concluyendo con un cifrado exitoso.
 
 ## Contribution Guidelines
 
