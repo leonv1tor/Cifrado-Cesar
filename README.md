@@ -8,47 +8,39 @@
 
 # Detalles
 
-Esta es una aplicación de consola en C# que funcione como calculadora para resolver problemas de Movimiento Rectilíneo Uniforme (MRU) y Movimiento Rectilíneo Uniformemente Acelerado (MRUA). La aplicación deberá solicitar al usuario qué cálculos desea realizar y continuará ejecutándose hasta que el usuario decida terminar. 
+Esta es una aplicación de consola en C# que funcione como calculadora para cifrar y decifrar cual quier texto de forma rapida y usando el cifrado cesar. La aplicación solicitara al usuario una entrada de texto de cualquier tamaño y el numero de posiciones que a de mover cada caracter en el texto con este metodo logramos realizarzar de forma correcta el cifrado cesar. 
 
 ## Funcionalidad de la calculadora
 
-La calculadora ofrece las siguientes funciones para MRU: 
+La calculadora ofrece las siguientes funciones de cifrado cesar: 
 
-Calcular la distancia (d = v * t). 
+1 ---> Cifrar un mensaje. 
 
-Calcular la velocidad (v = d / t). 
+2 ---> Decifrar un mensaje. 
 
-Calcular el tiempo (t = d / v). 
-
-Para MRUA, ofrece las siguientes funciones: 
-
-Calcular la posición final (x = x0 + v0 * t + 0.5 * a * t^2). 
-
-Calcular la velocidad final (v = v0 + a * t). 
-
-Calcular el tiempo (t = (v - v0) / a). 
+3 ---> Cifrar y Decifrar un mismo mensaje. 
 
 ## How to Use
 
 ```
-git clone https://github.com/TarsorCase/Examen-2.git
+git clone https://github.com/TarsorCase/Cifrado-Cesar.git
 ```
 ```
-cd Examen-2/
+cd Cifrado-Cesar/
 ```
 ```
-cd Exam/
+cd Calculadora/
 ```
 ```
 dotnet run Program.cs
 ```
 ![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/First.png)
 
-Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ```
+Dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ```
 
 ![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/MRU.png)
 
-En el caso de MRU dependiendo de la situacion en el que lo vaya usar eliga cualquier de las opciones: ``` 1 ``` o ``` 2 ``` o ``` 3 ``` 
+En el caso de cifrado poner un texto. EJ: ``` Hola ``` 
 
 ![](https://github.com/TarsorCase/Examen-2/blob/master/Photos/MRUA.png)
 
